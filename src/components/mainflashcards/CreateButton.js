@@ -51,7 +51,7 @@ const Createbutton = () => {
     if (values.term.length < 3) {
       errors.term = " minimum 3 characters required!!";
     }
-    if (values.defination.split(" ").length < ) {
+    if (values.defination.split(" ").length < 3) {
       errors.defination = " minimum 3 words required!! ";
     }
     return errors;

@@ -18,7 +18,6 @@ export const Reducer = (state = initialState, action) => {
         case DELETE_INPUT:
             let data = state.inputData.filter((ele, ind) => ind !== action.payload);
             localStorage.setItem('card-input', JSON.stringify(data));
-            // console.log('delete reducer ', action.payload);
             return {
                 ...state,
                 inputData: [...data]
@@ -26,7 +25,6 @@ export const Reducer = (state = initialState, action) => {
         case ADD_GROUP:
             localStorage.removeItem('card-input');
             state.inputData = [];
-            // let inputarr = JSON.parse(localStorage.getItem('card-input'))
             localStorage.setItem('groupData', JSON.stringify([...state.groupData, action.payload]))
             return {
                 ...state,

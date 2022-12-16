@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsArrowLeft, BsShare, BsDownload, BsPrinter } from "react-icons/bs";
-
+import {BsWhatsapp,BsFacebook} from "react-icons/bs"
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/exports";
 import { BiCopy } from "react-icons/bi";
@@ -9,7 +9,7 @@ import { CgClose } from "react-icons/cg";
 const DetailedFlashCards = () => {
     // to extract data from the Redux store
   const state = useSelector((state) => state.Reducer);
-  
+
   const [cardHandler, setCardHandle] = useState(0);
 
   // Increament handler
@@ -29,7 +29,7 @@ const DetailedFlashCards = () => {
     }
   };
 
-  // copy url
+  // To copy url
   const [copyAlertColor, setCopyAlertColor] = useState("initial");
   const [url, setUrl] = useState();
   const urlCopyHandler = () => {
@@ -196,6 +196,7 @@ const DetailedFlashCards = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

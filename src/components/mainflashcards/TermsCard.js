@@ -19,7 +19,7 @@ const TermsCard = ({ formik }) => {
             <div id='form_resp' className='flex flex-col sm:justify-start sm:flex-row'>
                 <div className='relative flex flex-col sm mr-4 mb-3 sm:mb-0 sm:mt-4 w-full sm:w-2/6'>
                     <span
-                        id='num1'
+                        id='number'
                         className='bg-red-500'>{state.length + 1}
                     </span>
                     <label

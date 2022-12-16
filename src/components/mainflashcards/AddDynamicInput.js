@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 const AddDynamicInput = () => {
     // to extract data from the Redux store
     const state = useSelector(state => state.Reducer.inputData);
-    
+
     //to the dispatch function from the Redux store
     const dispatch = useDispatch();
 
@@ -25,7 +25,7 @@ const AddDynamicInput = () => {
                         <div
                             className='relative flex flex-col mb-3 sm:mb-0 w-full sm:w-2/6 mr-4 '>
                             <span
-                                id='num'
+                                id='numIcon'
                                 className='bg-red-600'>{index + 1}
                             </span>
                             <label

@@ -33,23 +33,23 @@ code {
 }
 
 /* form  */
-#num {
+#numIcon {
   position: absolute;
   left: -8%;
   top: 7%;
   padding: 0px 6px;
+  color: white;
   border-radius: 50%;
   font-size: 12px;
-  color: white;
 }
-#num1 {
+#number {
   position: absolute;
   left: -8%;
   top: 7%;
+  color: white;
   padding: 0px 6px;
   border-radius: 50%;
   font-size: 12px;
-  color: white;
 }
 
 
@@ -104,26 +104,26 @@ code {
 }
 
 @media screen and (max-width:1200px) {
-  #num{
+  #numIcon{
     left: -15%;
   }
-  #num1{
+  #number{
     left: -15%;
   }
 }
 @media screen and (max-width:775px) and (min-width:657px){
-  #num{
+  #numIcon{
     left: -17%;
   }
-  #num1{
+  #number{
     left: -17%;
   }
 }
 @media screen and (max-width:657px) and (min-width:400px){
-  #num{
+  #numIcon{
     left: -6%;
   }
-  #num1{
+  #number{
     left: -6%;
   }
 }

@@ -6,6 +6,7 @@ import AddDynamicInput from "./AddDynamicInput";
 import { useDispatch, useSelector } from "react-redux";
 import { addGroup } from "../../redux/action/Action";
 
+
 const Createbutton = () => {
   // to extract data from the Redux store
   const state = useSelector((state) => state.Reducer.inputData);
@@ -21,7 +22,6 @@ const Createbutton = () => {
   };
 
   const onSubmit = (values) => {
-    // console.log("subit data: ", values);
     const currentValue = {
       term: formik.values.term,
       defination: formik.values.defination,
@@ -45,13 +45,13 @@ const Createbutton = () => {
     if (values.groupName.length < 3) {
       errors.groupName = " minimum 3 characters required!!";
     }
-    if (values.description.split(" ").length < 4) {
+    if (values.description.split(" ").length < 3) {
       errors.description = " minimum 3 words required!!";
     }
     if (values.term.length < 3) {
       errors.term = " minimum 3 characters required!!";
     }
-    if (values.defination.split(" ").length < 4) {
+    if (values.defination.split(" ").length < ) {
       errors.defination = " minimum 3 words required!! ";
     }
     return errors;

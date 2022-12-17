@@ -22,6 +22,6 @@ This app  has form validations using Formik
 This app uses redux for global State management
 The second page was to display all the user created cards, By default the user can only see 3 cards & after clicking the See All button all the remaining cards will be displayed.
 After clicking on the View Cards, User redirected to flashcard details page, where user can see all the cards on that flashcard, by clicking on the menu on the left side display the each selected card on the middle section,
-On the right side there are the button i.e. Share, Download, Print, by clicking on the Share button a Modal pops up & the user can copy link on that model by clicking on the copy to clipboard button the link copied to the clipboard & user can paste it anywhere. href
+On the right side there are the button i.e. Share, Download, Print, by clicking on the Share button a Modal pops up & the user can copy link on that model by clicking on the copy to clipboard button the link copied to the clipboard & user can paste it anywhere.
 
 <a href="https://flashcard-generator-mctljxnky-isaacebenezer.vercel.app/">deployment Link</a>
